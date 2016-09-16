@@ -20,7 +20,7 @@ def dfs(nowfullname, sub, depth):
         if os.path.isdir(nowfullname + sub + '/' + obj): dirs.append(obj)
     # 如果程序运行到这里，那么说明这个节点是叶子节点
     if not dirs:
-        nestList.append('   ' * depth + '- [' + sub + '](.doc' + nowfullname[1:] + sub + ')\n')
+        nestList.append('   ' * depth + '- [' + sub + '](doc' + nowfullname[1:] + sub + ')\n')
         if flag == False:
             print('error @ ', nowfullname + sub)
     else:

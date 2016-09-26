@@ -26,10 +26,6 @@
 
 # Part II
 
-- 读《算法导论》
-
-# Part III 
-
 - More infomation about Algorithm .Go to my Blog [ACM-ICPC](http://blog.csdn.net/zlqdhrdhrdhr "")
 
 

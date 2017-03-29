@@ -51,3 +51,8 @@ gcd的递归层数 4.785lgN + 1.673
 ```x0*(c/g) + k*(b/g), y0*(c/g) - k*(a/g) ```
 
 
+## Pr
+
+- POJ-2429-GCD_&_LCM_Inverse
+- POJ-1930-Dead_Fraction
+

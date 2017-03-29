@@ -19,3 +19,9 @@ map<int,int> prime_factor(int n){
 int main(){  
 }  
 ```
+
+## Pr
+
+- POJ-3126-Prime_Path
+- POJ-3421-X_factor_Chains
+- POJ-3292-Semi_prime_H_numbers

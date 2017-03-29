@@ -127,3 +127,10 @@ int main () {
     }  
 }  
 ```
+
+
+## Pr
+
+- UVA-10006-Carmichael_Number
+- POJ-3641-Pseudoprime_numbers
+- POJ-1995-Raising_Modulo_Numbers

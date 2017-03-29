@@ -199,3 +199,14 @@ int main()
 ```
 
 ## 其他有偏序关系，如gcd大多也可以使用线段树维护。
+
+
+## Pr
+
+- POJ-3468-区间更新
+- POJ-2991-起重机
+- POJ-3264-Balanced_Lineup
+- POJ-3368-Frequent_values
+- POJ-3470-Walls
+- POJ-1201-Intervals
+- UVa-11990-"Dynamic"_Inversion

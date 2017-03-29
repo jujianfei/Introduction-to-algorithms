@@ -13,11 +13,16 @@ def dfs(nowfullname, sub, depth):
     # 如果是空的文件夹，说明还没有任何实现，就先不加入内容
     if not os.listdir(nowfullname + sub): return
     dirs = []
+    flag = False
     for obj in os.listdir(nowfullname + sub):
+        if obj == 'README.md':
+            flag = True
         if os.path.isdir(nowfullname + sub + '/' + obj): dirs.append(obj)
     # 如果程序运行到这里，那么说明这个节点是叶子节点
     if not dirs:
         nestList.append('   ' * depth + '- [' + sub + '](' + nowfullname + sub + ')\n')
+        if flag == False:
+            print('error @ ', nowfullname + sub)
     else:
         nestList.append('   ' * depth + '- ' + sub + '\n')
         for _dir in dirs:
@@ -28,22 +33,38 @@ for file in files:
 
 maintext_before = """
     
-    ## 算法总结
+## 1.目录
     
 """
 
 maintext_after = """
     
-    ## [博客]()
+## 2.[成就](./src)
 
-    ## 参考
+## 3.[博客](http://blog.csdn.net/zlqdhrdhrdhr?viewmode=contents)
 
-    - *CLRS 3rd*
-    - *Algorithm 4th*
-    - *算法竞赛入门经典*
-    - *挑战程序设计*
-    - **
+## 4.参考
+
+- *CLRS 3rd*
+- *Algorithm 4th*
+- *算法竞赛入门经典*
+- *挑战程序设计竞赛*
+- *图论算法理论实现及应用*
+- *离散数学及其应用*
+
+## 5.[后记](saysomething.txt)
+
 
 """
 
+
+maintext_middle = ''.join(nestList)
+
+final = maintext_before + maintext_middle + maintext_after
+
+# print(final)
+
+f = open('../README.md', 'w', encoding='utf-8')
+f.write(final)
+f.close()
 

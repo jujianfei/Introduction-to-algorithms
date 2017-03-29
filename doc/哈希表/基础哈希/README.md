@@ -41,3 +41,28 @@ h2(k) % 2 == 1
 特别注意delete的方法的实现
 
 
+## 手写hash函数，使用拉链法  
+  
+hash拉链法使用类似链式前向星的数据结构  
+```C++
+bool insert_hash(int x)    
+{    
+    int h=hashfunction(x);    
+    int u=hash[h];    
+    while(u)    
+    {    
+        //比较链表上的每一个    
+        if(u==x)return false;    
+        else    
+        {    
+            u=next[u];    
+        }    
+    
+    }    
+    next[x]=hash[h];    
+    hash[h]=x;//这里用的头插法    
+    return true;    
+}    
+```  
+hash只是提供一个头部的的索引，指针的作用有next数组来实现。  
+如果需要其他的信息，那么可以使用info新建立的数组，存放。  

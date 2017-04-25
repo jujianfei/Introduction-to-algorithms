@@ -5,6 +5,7 @@
 - C_Cpp
    - STL
       - [优先队列自定义优先级](doc/C_Cpp/STL/优先队列自定义优先级)
+      - [名次树](doc/C_Cpp/STL/名次树)
       - [自定义哈希函数](doc/C_Cpp/STL/自定义哈希函数)
    - [位运算](doc/C_Cpp/位运算)
    - [字符串函数](doc/C_Cpp/字符串函数)

@@ -69,23 +69,17 @@ next数组实际上是对称性的一种表现，看起来十分好理解，但�
 [1,last=3]和[begin=3,5]是相等的，因此6号就是last+1=4了，(相等的下一位元素索引)。
 
 
+下面这个算法的参考地址是[这里。](http://blog.csdn.net/yearn520/article/details/6729426)
+
 ```C++
-vector<int> get_next(const string&s){
-    vector<int> next(s.size());
-    int i=0,j=-1;
-    next[0]=-1;
-    while(i<s.size()){
-        if(j==-1||s[i]==s[j]){
-            ++i,++j;
-            next[i]=j;
-        }else{
-            j=next[j];//这一步很关键
-        }
-    }
-    return next;
+vector<int> next(t.size(), 0);
+for (int i = 1; i < t.size(); ++i) {
+    int j = next[i - 1];
+    while (j > 0 && t[i] != t[j]) j = next[j - 1];
+    next[i] = (j += t[i] == t[j]);
 }
 
-//使用next数组进行匹配  
+//使用next数组进行匹配，如果需要使用这个数组进行匹配，需要全部减一处理
   
 bool kmp(const string&s,const string&t){  
     int i=-1,j=-1;  

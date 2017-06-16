@@ -1,5 +1,14 @@
 
-    
+## 0.成就
+
+
+- [POJ 177 Solved](./src/POJ)
+- [PAT 45 Solved.](./src/PAT)
+- [LeetCode 350+ Solved.](https://github.com/zhanglanqing/Leetcode-solutions)
+- [CodeForces 50+ Solved.](./src/CodeForces)
+- [UVA 67 solved](./src/UVA)
+
+
 ## 1.目录
     
 - C_Cpp
@@ -153,11 +162,11 @@
    - [区间贪心](doc/贪心/区间贪心)
 
     
-## 2.[成就](./src)
 
-## 3.[博客](http://blog.csdn.net/zlqdhrdhrdhr?viewmode=contents)
 
-## 4.参考
+## 2.[博客](http://blog.csdn.net/zlqdhrdhrdhr?viewmode=contents)
+
+## 3.参考
 
 - *CLRS 3rd*
 - *Algorithm 4th*
@@ -166,6 +175,6 @@
 - *图论算法理论实现及应用*
 - *离散数学及其应用*
 
-## 5.[后记](saysomething.txt)
+## 4.[后记](saysomething.txt)
 
 
